@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ascets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- CHALLENGE 1 -->
+
+    <div class="container1">
+        <h1>GAME 1: YOUR AGE IN DAYS</h1>
+
+        <div class="flexbox1">    
+            <div>
+                <button class="btn btn-danger" onclick="ageInDays()">CLICK ME</button>
+            </div>
+            <div>
+                <button class="btn btn-primary" onclick="reset()">RESET</button>
+            </div>
+        </div>
+
+        <div class="flexbox1">
+            <div id="flexboxResult">
+
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- CHALLENGE 2 -->
+
+    <div class="container2">
+        <h1>GAME 2: KITTY GENERATOR</h1>
+
+            <button class="btn btn-success" onclick = "generateKitty()">
+                GENERATE CAT
+            </button>
+
+        <div class="flexbox2" id="kitty">
+      
+        </div>
+    </div>
+
+
+    <!-- CHALLENGE 3 -->
+
+    <div class="container3">
+        <h1>GAME 3: ROCK, PAPER, SCISSORS</h1>
+
+        <div id="flexbox3">
+            <img src="ascets/images/x.jpg" height=200 width=200 alt="rock" id="rock" onclick="mannualClick(this)">
+            <img src="ascets/images/y.jpg" height=200 width=200 alt="paper" id="paper" onclick="mannualClick(this)">
+            <img src="ascets/images/z.jpg" height=200 width=200 alt="scissors" id="scissors" onclick="mannualClick(this)">
+        </div>
+    </div>
+
+    
+    <!-- CHALLENGE 4 -->
+
+    <div class="container4">
+        <h1>GAME 4: CHANGE THE COLORS OF ALL BUTTONS</h1>
+
+        <div class="flexbox4">
+            <form action="#">
+                <select name="colors" id="color" onchange="implementColor(this)">
+                    <option value="random">RANDOM</option>
+                    <option value="red">RED</option>
+                    <option value="green">GREEN</option>
+                    <option value="blue">BLUE</option>
+                    <option value="reset">RESET</option>
+                </select>
+            </form>
+           
+            <button class="btn btn-primary">WOO!</button>
+            <button class="btn btn-danger">YAHOO!</button>
+            <button class="btn btn-warning">GOOGLE!</button>
+            <button class="btn btn-success">FACEBOOK!</button>
+        </div>    
+    </div>
+
+
+    <!-- CHALLENGE 5: BLACK JACK GAME -->
+
+    <div class="container5">
+        <h1>GAME 5:BLACKJACK</h1>
+        <h3><span id="result">Let's Play</span></h3>
+
+        <div class="flexbox5-row1">
+            <div id="your-Box">
+                <h2>You: <span id="you">0</span></h2>
+            </div>
+
+            <div id="dealer-Box">
+                <h2>Dealer: <span id="dealer">0</span></h2>
+            </div>
+        </div>
+      
+        <div class="flexbox5-row2">
+            <div>
+                <button id="hit" class="btn-lg btn-primary">Hit</button>
+                <button id="stand" class="btn-lg btn-warning">Stand</button>
+                <button id="deal" class="btn-lg btn-danger">Deal</button>
+            </div>    
+        </div>
+        
+        <div class="flexbox5-row3">
+            <table>
+                <tr>
+                    <th>WINS</th>
+                    <th>LOOSES</th>
+                    <th>DRAWS</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="looses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    
+<script src="ascets/calc.js"></script>    
+</body>
+</html>

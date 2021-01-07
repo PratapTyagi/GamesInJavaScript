@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1,
+.container2,
+.container3,
+.container4,
+.container5
+{
+    width: 75%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+
+.flexbox1,
+.flexbox2, 
+#flexbox3,
+.flexbox4,
+.flexbox5-row1,.flexbox5-row2,.flexbox5-row3
+{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexbox5-row1, .flexbox5-row2{
+    background: url('https://media2.picsearch.com/is?tj9AumCpQDg9rXy9SZjX-vi_mVc1RLiigju2NA1IGdM&height=255');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: #000000;
+}
+
+.flexbox5-row1 div{
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    min-height: 350px;
+}
+
+.flexbox5-row1 div{
+    margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    min-height: 350px;
+}
+
+.flexbox5-row1 img{
+    width: 25%;
+    margin: 5px 10px;
+    box-shadow: 4px 18px 10px rgba(0 , 0, 0, 0.5);
+}
+
+.flexbox5-row2 div{
+    padding: 10px;
+}
+
+.flexbox5-row2 button{
+    margin: 0 5px;
+}
+
+.flexbox5-row2 button:hover{
+    box-shadow: 2px 2px 8px rgba(0 , 0, 0, 0.7);
+}
+
+table, th, td{
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.flexbox1 div
+{
+    display: flex;
+    padding: 10px;
+    border: 2px solid grey;
+}
+
+#kitty img
+{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    box-shadow: 4px 18px 10px rgba(0 , 0, 0, 0.5);
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover
+{
+    box-shadow: 0px 18px 25px rgba(0 , 0, 0, 0.5);
+}
+
+#color{
+    border: none;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 10px 5px 10px rgba(0 , 0, 0, 0.3);
+    background-color: yellowgreen;
+    padding: 10px;
+    margin: 0;
+}
+
+#color option{
+    font-weight: bold;
+}
+
+#color:hover{
+    color: #fff;
+    background-color: rgba(0 , 0, 0, 0.7);
+}    
